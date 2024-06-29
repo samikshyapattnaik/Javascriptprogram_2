@@ -1,0 +1,36 @@
+<!--check largest number among the provide numbers-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    function check(p,q,r){
+        if(p>=q && p>=r){
+            return p;
+        }
+        else if(q>=p && q>=r){
+            return q;
+
+        }
+        else{
+            return r;
+        }
+
+        }
+    var a = prompt("please enter a number");
+    var b = prompt("please enter a number");
+    var c = prompt("please enter a number");
+    var x = check(a,b,c);
+    console.log(`${a},${b},${c} : largest = ${x}`)
+
+</script>
+</html>

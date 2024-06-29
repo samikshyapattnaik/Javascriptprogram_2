@@ -1,0 +1,28 @@
+<!--find to factorial of a number using recursion;-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js8</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var number= prompt("enter a number");
+         var fact = 1;
+        function factr(n){
+            if (n>number){
+                return;
+            }
+            var temp=fact;
+            fact = fact*n;
+            n++;
+            factr(n)
+            
+        }
+    
+        factr(1);
+        console.log(`The fact of ${number} is ${fact}` )
+    </script>
+</body>
+</html>
